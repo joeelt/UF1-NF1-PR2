@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#DAACFE">
+
+    <EditText
+        android:id="@+id/ET_Nom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:hint="Nombre pelicula"/>
+
+    <EditText
+        android:id="@+id/ET_Genero"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Genero"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"/>
+    <EditText
+        android:id="@+id/ET_Votacion"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Votacion"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/BTN_Afegir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Afegir"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FFFB00"
+            />
+        <Button
+            android:id="@+id/BTN_Actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Actualizar"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#75F5AB"/>
+        <Button
+            android:id="@+id/BTN_Esborrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Esborrar"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FF0000"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/LV_Lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="20dp"/>
+</LinearLayout>
